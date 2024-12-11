@@ -1,0 +1,143 @@
+/* Grundläggande stilar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Förbättrad läsbarhet */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Förbättrad layout med större avstånd */
+    flex-wrap: wrap; /* För responsiv design */
+    margin: 1rem 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #555;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background: #777;
+    transform: scale(1.05); /* Ger en subtil "hover"-effekt */
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+main {
+    padding: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto; /* Centrerar innehållet */
+    background: #fff; /* Tydlig avgränsning från bakgrundsfärgen */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lägger till en svag skugga */
+}
+
+/* Sektion för formulär */
+form {
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto; /* Centrerar formuläret med avstånd från andra sektioner */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical; /* Tillåter att användaren ändrar höjden på textrutan */
+}
+
+button {
+    width: auto; /* Behåller knappens innehållsstorlek */
+    padding: 0.75rem 1.5rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #555;
+    transform: translateY(-2px); /* Lägger till en subtil lyft-effekt */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative; /* Fix för små skärmar */
+    width: 100%;
+    margin-top: 2rem; /* Ger utrymme mellan innehåll och footer */
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Ändrar layouten till vertikal */
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    input, textarea, button {
+        font-size: 0.9rem
